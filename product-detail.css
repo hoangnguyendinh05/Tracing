@@ -1,0 +1,172 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #007aff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+
+/* Phone Detail Section */
+.phone-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+.phone-image img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+.phone-info {
+  margin-left: 20px;
+  flex: 1;
+}
+.phone-info button {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+.phone-info button:hover {
+  background: #218838;
+}
+
+/* Phone Description Section */
+.phone-description {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.phone-description h3 {
+  margin-top: 0;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.customer-reviews h3 {
+  margin-bottom: 15px;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.review {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #007aff;
+}
+.review span {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Related Products Section */
+.related-products {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.related-products h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.product {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: scale(1.03);
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.product p {
+  font-size: 16px;
+  color: #555;
+}
+.product button {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+.product button:hover {
+  background: #218838;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+footer p {
+  margin: 0;
+}

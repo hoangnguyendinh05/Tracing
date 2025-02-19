@@ -5,138 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mô tả chi tiết điện thoại</title>
+    <link rel="stylesheet" href="product-detail.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* style.css */
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #007aff;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .phone-detail {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        .phone-image img {
-            max-width: 300px;
-            /* Set a max width for the image */
-            border-radius: 8px;
-        }
-
-        .phone-info {
-            margin-left: 20px;
-            flex: 1;
-        }
-
-        button {
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-bottom: 20px;
-            transition: background 0.3s ease;
-        }
-
-        button:hover {
-            background: #218838;
-        }
-
-        .phone-description {
-            background: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .phone-description h3 {
-            margin-top: 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <h1>Chi tiết về Điện thoại Samsung Galaxy S4</h1>
+        <img src="logo.jfif" alt="Phone Store Logo" width="100">
+        <div class="main-header">
+            <h1>Phone Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Giỏ Hàng</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="phone-detail">
-        <div class="phone-image">
-            <img src="data:image/jpeg;base64,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"
-                alt="Điện thoại Samsung Galaxy S4">
-        </div>
-        <div class="phone-info">
-            <button>Mua ngay</button>
-            <h2>Điện thoại Samsung Galaxy S4</h2>
-            <p><strong>Giá:</strong> 8,000,000 VNĐ</p>
-            <p><strong>Màn hình:</strong> Super AMOLED 5.0 inch, độ phân giải 1080 x 1920 pixels</p>
-            <p><strong>Bộ vi xử lý:</strong> Snapdragon 600</p>
-            <p><strong>RAM:</strong> 2GB</p>
-            <p><strong>Bộ nhớ trong:</strong> 16GB (hỗ trợ thẻ nhớ)</p>
-            <p><strong>Camera sau:</strong> 13MP</p>
-            <p><strong>Camera trước:</strong> 2MP</p>
-            <p><strong>Pin:</strong> 2600mAh</p>
-        </div>
-    </section>
+    <main>
+        <!-- Phone Detail Section -->
+        <section class="phone-detail">
+            <div class="phone-image">
+                <img src="sanpham3.jpg" alt="Điện thoại Samsung Galaxy S4">
+            </div>
+            <div class="phone-info">
+                <button>Mua ngay</button>
+                <h2>Điện thoại Samsung Galaxy S4</h2>
+                <p><strong>Giá:</strong> 8,000,000 VNĐ</p>
+                <p><strong>Màn hình:</strong> Super AMOLED 5.0 inch, độ phân giải 1080 x 1920 pixels</p>
+                <p><strong>Bộ vi xử lý:</strong> Snapdragon 600</p>
+                <p><strong>RAM:</strong> 2GB</p>
+                <p><strong>Bộ nhớ trong:</strong> 16GB (hỗ trợ thẻ nhớ)</p>
+                <p><strong>Camera sau:</strong> 13MP</p>
+                <p><strong>Camera trước:</strong> 2MP</p>
+                <p><strong>Pin:</strong> 2600mAh</p>
+            </div>
+        </section>
 
-    <section class="phone-description">
-        <h3>Mô tả chi tiết</h3>
-        <p>
-            Samsung Galaxy S4 là một trong những chiếc điện thoại hàng đầu của Samsung vào thời điểm ra mắt. Với thiết
-            kế
-            nhẹ
-            nhàng và mỏng, cùng màn hình Super AMOLED sống động, Galaxy S4 mang đến trải nghiệm hình ảnh tuyệt vời. Máy
-            được
-            trang bị bộ vi xử lý Snapdragon 600, giúp xử lý mượt mà mọi tác vụ. Camera 13MP cho chất lượng hình ảnh sắc
-            nét,
-            và chế độ chụp ảnh thông minh cho phép bạn chụp được những khoảnh khắc đáng nhớ. Với dung lượng pin 2600mAh,
-            chiếc
-            điện thoại này đảm bảo hoạt động lâu dài trong suốt cả ngày.
-        </p>
-    </section>
+        <!-- Phone Description Section -->
+        <section class="phone-description">
+            <h3>Mô tả chi tiết</h3>
+            <p>
+                Samsung Galaxy S4 là một trong những chiếc điện thoại hàng đầu của Samsung vào thời điểm ra mắt. Với
+                thiết kế nhẹ nhàng và mỏng, cùng màn hình Super AMOLED sống động, Galaxy S4 mang đến trải nghiệm hình
+                ảnh tuyệt vời. Máy được trang bị bộ vi xử lý Snapdragon 600, giúp xử lý mượt mà mọi tác vụ. Camera 13MP
+                cho chất lượng hình ảnh sắc nét, và chế độ chụp ảnh thông minh cho phép bạn chụp được những khoảnh khắc
+                đáng nhớ. Với dung lượng pin 2600mAh, chiếc điện thoại này đảm bảo hoạt động lâu dài trong suốt cả ngày.
+            </p>
+        </section>
 
+        <!-- Customer Reviews Section -->
+        <section class="customer-reviews">
+            <h3>Đánh giá của khách hàng</h3>
+            <div class="reviews">
+                <div class="review">
+                    <p>"Sản phẩm tốt, hiệu năng ổn định. Rất hài lòng với chiếc điện thoại này!"</p>
+                    <span>- Nguyễn Văn A</span>
+                </div>
+                <div class="review">
+                    <p>"Pin trâu, màn hình đẹp, đáng đồng tiền bát gạo."</p>
+                    <span>- Trần Thị B</span>
+                </div>
+                <div class="review">
+                    <p>"Đáng mua, mặc dù giá hơi cao so với một số mẫu khác."</p>
+                    <span>- Lê Văn C</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products Section -->
+        <section class="related-products">
+            <h3>Sản phẩm liên quan</h3>
+            <div class="product-list">
+                <div class="product">
+                    <img src="sanpham1.png" alt="Điện thoại Samsung Galaxy S20">
+                    <h4>Samsung Galaxy S20</h4>
+                    <p>10,000,000 VNĐ</p>
+                    <button>Xem chi tiết</button>
+                </div>
+                <div class="product">
+                    <img src="14pro.png" alt="Điện thoại iPhone 14 Pro">
+                    <h4>iPhone 14 Pro</h4>
+                    <p>12,000,000 VNĐ</p>
+                    <button>Xem chi tiết</button>
+                </div>
+                <div class="product">
+                    <img src="mi11.png" alt="Điện thoại Xiaomi Mi 11">
+                    <h4>Xiaomi Mi 11</h4>
+                    <p>9,000,000 VNĐ</p>
+                    <button>Xem chi tiết</button>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Mô tả chi tiết điện thoại. Tất cả quyền được bảo lưu.</p>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Về chúng tôi</h3>
+                <p>
+                    Chúng tôi chuyên cung cấp sản phẩm điện thoại chất lượng cao, mang đến trải nghiệm tốt nhất cho
+                    khách
+                    hàng.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Liên hệ</h3>
+                <p>Email: info@phonestore.com</p>
+                <p>Điện thoại: 0123-456-789</p>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phone Store. Tất cả quyền được bảo lưu.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
