@@ -4,24 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Nhập</title>
-    <link rel="stylesheet" href="bai tap.css">
-    <link rel="stylesheet" href="baitap.js">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
-    <div class="login-container">
-        <h2>Đăng Nhập</h2>
-        <form id="login-form">
+    <div class="container">
+        <h2>Đăng Ký</h2>
+        <form id="registerForm">
             <input type="text" id="username" placeholder="Tên đăng nhập" required>
+            <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Mật khẩu" required>
-            <button type="submit">Đăng Nhập</button>
+            <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu" required>
+            <button type="submit">Đăng Ký</button>
         </form>
         <p id="message"></p>
-        <a href="signup.html">Chưa có tài khoản?</a>
     </div>
-
-
+    <script src="signup.js"></script>
     <script src="script.js"></script>
 </body>
 
